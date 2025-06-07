@@ -60,8 +60,4 @@ The app offers a structured, 3-stage learning path:
 
 
 ```bash
-# Example placeholder
-git clone https://github.com/your-repo/sign-language-app.git
-cd sign-language-app
-npm install
-npm start
+
