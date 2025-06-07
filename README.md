@@ -2,9 +2,6 @@
 
 > “Bridging the gap between DHH families and communication through sign language education.”
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web-lightgrey)
-![Status](https://img.shields.io/badge/status-In%20Development-yellow)
 
 ---
 
