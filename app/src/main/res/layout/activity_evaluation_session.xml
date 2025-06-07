@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Back" />
+
+    <!-- Question Image -->
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="250dp"  
+        android:layout_height="250dp"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerInside"
+        android:contentDescription="Question Image" />
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:text="Question"
+        android:textStyle="bold" />
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="#555"
+        android:text="Capture a video showing the missing letter sign." />
+
+    <!-- Score Text -->
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="Round: 1 | Correct: 0 | Wrong: 0" />
+
+    <!-- Progress Bar -->
+    
+
+    <!-- Capture Button (Moved below scoreTextView) -->
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreTextView"  
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Capture Video"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF" />
+
+    <!-- Home Button -->
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Home"
+        android:textColor="#000" />
+
+</RelativeLayout>

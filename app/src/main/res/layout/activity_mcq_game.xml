@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top Section: Back Button + Stats -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Back Button Moved to Top-Left -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"/>
+
+        <!-- Stats Text Centered -->
+        <TextView
+            android:id="@+id/statsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q: 1"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+    </RelativeLayout>
+
+    <!-- Question Letter -->
+    <TextView
+        android:id="@+id/questionLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <!-- 2x2 Grid Layout for Options -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:id="@+id/optionsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_gravity="center">
+
+            <!-- Option A -->
+            <ImageView
+                android:id="@+id/optionA"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"/>
+
+            <!-- Option B -->
+            <ImageView
+                android:id="@+id/optionB"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"/>
+
+            <!-- Option C -->
+            <ImageView
+                android:id="@+id/optionC"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"/>
+
+            <!-- Option D -->
+            <ImageView
+                android:id="@+id/optionD"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"/>
+        </GridLayout>
+
+        <!-- Result Text -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="0sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"/>
+    </LinearLayout>
+
+    <!-- Permission Request Section (newly added) -->
+    <LinearLayout
+        android:id="@+id/permissionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone" 
+        android:layout_marginTop="16dp">
+
+        <!-- Permission Message -->
+        <TextView
+            android:id="@+id/permissionMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We need storage permissions to save your game data."
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Request Permission Button -->
+        <Button
+            android:id="@+id/requestPermissionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grant Permission"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

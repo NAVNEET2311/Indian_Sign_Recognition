@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ML Recognition"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    
+
+    <!-- Training Session Button -->
+    <Button
+        android:id="@+id/trainingSessionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Training Session"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Practice Session Button -->
+    <Button
+        android:id="@+id/practiceSessionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDENTIFY THE SIGNS"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- New Evaluation Session Button -->
+    <Button
+        android:id="@+id/evaluationSessionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evaluation Session"
+        android:textSize="18sp" />
+
+</LinearLayout>

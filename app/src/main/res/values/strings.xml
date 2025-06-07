@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ML with TensorFlowLite</string>
+    <string name="letter_image_desc">Description for letter image</string>
+</resources>
